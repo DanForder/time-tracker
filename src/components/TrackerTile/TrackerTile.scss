@@ -57,6 +57,7 @@
 
       .tracker-tile__heading {
         font-weight: $font-weight-bold;
+        text-transform: capitalize;
       }
 
       .tracker-tile__button {
@@ -86,6 +87,7 @@
         font-size: $font-size-small;
         font-weight: $font-weight-thin;
         color: $color-neutral-pale;
+        text-transform: capitalize;
       }
     }
   }

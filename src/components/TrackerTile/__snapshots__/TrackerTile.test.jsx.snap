@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render the tracker tile component 1`] = `
+<div>
+  <div
+    class="tracker-tile tracker-tile--work"
+  >
+    <div
+      class="tracker-tile__background-image-wrapper"
+    >
+      <img
+        alt=""
+        class="tracker-tile__background-image"
+        src="icon-work.svg"
+      />
+    </div>
+    <div
+      class="tracker-tile__content"
+    >
+      <div
+        class="tracker-tile__content-row"
+      >
+        <h2
+          class="tracker-tile__heading"
+        >
+          Work
+        </h2>
+        <button
+          class="tracker-tile__button"
+        >
+          <svg
+            class="tracker-tile__button-icon"
+          >
+            icon-ellipsis.svg
+          </svg>
+        </button>
+      </div>
+      <div
+        class="tracker-tile__content-row"
+      >
+        <p
+          class="tracker-tile__this-week-time"
+        >
+          32hrs
+        </p>
+        <p
+          class="tracker-tile__last-week-time"
+        >
+          Last Week - 36hrs
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,6 @@
+@use "./variables" as *;
+
+// receives a top color and bottom color (which defaults to neutral-dark)
+@mixin bg-color($color-top, $color-bottom: $color-neutral-dark) {
+  background-image: linear-gradient($color-top 75%, $color-bottom 25%);
+}

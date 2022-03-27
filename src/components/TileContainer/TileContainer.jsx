@@ -1,9 +1,19 @@
+import ProfileTile from "../ProfileTile/ProfileTile";
 import TrackerTile from "../TrackerTile/TrackerTile";
+import "./TileContainer.scss";
 
-const TileContainer = ({ tiles }) => {
+const TileContainer = ({ profile, trackerItems }) => {
+  const { timeframe, image, name, setTimeframe } = profile;
+
   return (
     <div className="tile-container">
-      {tiles.map(({ category, timeframes, lastTimeframeName }) => {
+      <ProfileTile
+        activeTimeframe={timeframe}
+        profileImage={image}
+        profileName={name}
+        setTimeframe={setTimeframe}
+      />
+      {trackerItems.map(({ category, timeframes, lastTimeframeName }) => {
         return (
           <TrackerTile
             key={category}

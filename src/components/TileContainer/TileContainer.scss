@@ -1,0 +1,23 @@
+@use "../../styles/variables" as *;
+
+.tile-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 1.25rem;
+}
+
+@media screen and (min-width: $desktop-breakpoint) {
+  .tile-container {
+    display: grid;
+    grid-template:
+      "profile a b c" 1fr
+      "profile d e f" 1fr
+      / 1fr 1fr 1fr 1fr;
+    max-width: 70rem;
+
+    > *:first-child {
+      grid-area: profile;
+    }
+  }
+}

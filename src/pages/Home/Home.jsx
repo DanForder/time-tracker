@@ -1,13 +1,18 @@
 import { useState } from "react";
 import profileImage from "../../assets/images/image-jeremy.png";
 import Layout from "../../components/Layout/Layout";
-import ProfileTile from "../../components/ProfileTile/ProfileTile";
 import TileContainer from "../../components/TileContainer/TileContainer";
 import data from "../../data/mockData.json";
 import { getLastTimeframeName } from "../../utils/ticketUtils";
 
 const Home = () => {
   const [timeframe, setTimeframe] = useState("weekly");
+  const [profile] = useState({
+    timeframe,
+    image: profileImage,
+    name: "Jeremy Robson",
+    setTimeframe,
+  });
 
   const tiles = data.map(({ title, timeframes }) => {
     return {
@@ -19,13 +24,7 @@ const Home = () => {
 
   return (
     <Layout>
-      <ProfileTile
-        activeTimeframe={timeframe}
-        profileImage={profileImage}
-        profileName="Jeremy Robson"
-        setTimeframe={setTimeframe}
-      />
-      <TileContainer tiles={tiles} />
+      <TileContainer profile={profile} trackerItems={tiles} />
     </Layout>
   );
 };

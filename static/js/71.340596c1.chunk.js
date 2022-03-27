@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunktime_tracker=self.webpackChunktime_tracker||[]).push([[71],{71:function(e,t,c){e.exports=c.p+"static/media/icon-exercise.3e7b028289414a132318.svg"}}]);

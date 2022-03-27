@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunktime_tracker=self.webpackChunktime_tracker||[]).push([[864],{864:function(e,t,a){e.exports=a.p+"static/media/icon-work.a3f124e593ab45ba795f.svg"}}]);

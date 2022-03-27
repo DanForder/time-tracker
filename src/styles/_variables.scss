@@ -5,6 +5,24 @@ $desktop-breakpoint: 1024px;
 $large-desktop-breakpoint: 1440px;
 $extra-large-desktop-breakpoint: 2560px;
 
-//colors
-$text-color: #f3f2e8;
-$background-color: #1f1b1b;
+//primary colors
+$color-primary: #5847eb;
+$color-text: white;
+
+$color-work: #ff8c66;
+$color-play: #56c2e6;
+$color-study: #ff5c7c;
+$color-exercise: #4acf81;
+$color-social: #7536d3;
+$color-self-care: #f1c65b;
+
+// neutral colours
+$color-neutral-very-dark: #0f1424;
+$color-neutral-dark: #1c1f4a;
+$color-neutral-desaturated: #6f76c8;
+$color-neutral-pale: #bdc1ff;
+
+// font weights
+$font-weight-thin: 300;
+$font-weight-regular: 400;
+$font-weight-bold: 500;

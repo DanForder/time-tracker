@@ -1,4 +1,4 @@
-import classnames from "classnames";
+import classNames from "classnames";
 import { ReactComponent as EllipsisIcon } from "../../assets/images/icon-ellipsis.svg";
 import useCategoryImage from "../../hooks/useCategoryImage";
 import { formatCategoryString } from "../../utils/ticketUtils";
@@ -6,7 +6,7 @@ import "./TrackerTile.scss";
 
 const TrackerTile = ({ category, timeframes, lastTimeframeName }) => {
   const [backgroundImage] = useCategoryImage(category);
-  const rootClassNames = classnames(
+  const rootClassNames = classNames(
     "tracker-tile",
     `tracker-tile--${formatCategoryString(category)}`
   );

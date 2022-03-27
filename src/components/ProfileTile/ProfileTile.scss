@@ -1,0 +1,55 @@
+@use "../../styles/variables" as *;
+
+.profile-tile {
+  border-radius: $border-radius;
+  background: $color-neutral-dark;
+
+  .profile-tile__header {
+    background-color: $color-primary;
+    display: grid;
+    grid-template:
+      "image report" 1fr
+      "image name" 1fr
+      / 1fr 3fr;
+    border-radius: $border-radius;
+    align-items: center;
+    padding: 1.75rem 1.5rem;
+    gap: 0 1rem;
+
+    .profile-tile__image {
+      grid-area: image;
+      border: $color-text solid 3px;
+      border-radius: 100%;
+      width: 100%;
+    }
+
+    .profile-tile__report-text {
+      grid-area: report;
+      font-weight: $font-weight-thin;
+      align-self: end;
+    }
+
+    .profile-tile__name {
+      grid-area: name;
+      font-size: $font-size-medium;
+      font-weight: $font-weight-thin;
+    }
+  }
+
+  .profile-tile__button-group {
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0.5rem;
+
+    .profile-tile__button {
+      background-color: transparent;
+      border: none;
+      color: $color-neutral-pale;
+
+      &--active {
+        color: $color-text;
+      }
+    }
+  }
+}

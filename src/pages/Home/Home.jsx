@@ -1,5 +1,7 @@
 import { useState } from "react";
+import profileImage from "../../assets/images/image-jeremy.png";
 import Layout from "../../components/Layout/Layout";
+import ProfileTile from "../../components/ProfileTile/ProfileTile";
 import TileContainer from "../../components/TileContainer/TileContainer";
 import data from "../../data/mockData.json";
 import { getLastTimeframeName } from "../../utils/ticketUtils";
@@ -17,24 +19,12 @@ const Home = () => {
 
   return (
     <Layout>
-      <button
-        style={{ backgroundColor: "dodgerblue" }}
-        onClick={() => setTimeframe("daily")}
-      >
-        Daily
-      </button>
-      <button
-        style={{ backgroundColor: "dodgerblue" }}
-        onClick={() => setTimeframe("weekly")}
-      >
-        Weekly
-      </button>
-      <button
-        style={{ backgroundColor: "dodgerblue" }}
-        onClick={() => setTimeframe("monthly")}
-      >
-        Monthly
-      </button>
+      <ProfileTile
+        activeTimeframe={timeframe}
+        profileImage={profileImage}
+        profileName="Jeremy Robson"
+        setTimeframe={setTimeframe}
+      />
       <TileContainer tiles={tiles} />
     </Layout>
   );

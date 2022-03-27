@@ -7,12 +7,12 @@ import { getLastTimeframeName } from "../../utils/ticketUtils";
 
 const Home = () => {
   const [timeframe, setTimeframe] = useState("weekly");
-  const [profile] = useState({
+  const exampleProfile = {
     timeframe,
     image: profileImage,
     name: "Jeremy Robson",
     setTimeframe,
-  });
+  };
 
   const tiles = data.map(({ title, timeframes }) => {
     return {
@@ -24,7 +24,7 @@ const Home = () => {
 
   return (
     <Layout>
-      <TileContainer profile={profile} trackerItems={tiles} />
+      <TileContainer profile={exampleProfile} trackerItems={tiles} />
     </Layout>
   );
 };

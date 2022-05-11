@@ -18,7 +18,7 @@ const ProfileTile = ({
       <div className="profile-tile__header">
         <img className="profile-tile__image" src={profileImage} alt="profile" />
         <p className="profile-tile__report-text">Report for</p>
-        <p className="profile-tile__name">{profileName}</p>
+        <h1 className="profile-tile__name">{profileName}</h1>
       </div>
 
       <div className="profile-tile__button-group">
